@@ -6,9 +6,9 @@
 
 <!-- esconde titulo de mensagens na pagina de alertas e vice versa -->
 {% if alerta and not room_messages %}
-<h3 class="active-title">Recentes</h3>
+<h3 class="active-title">Recent</h3>
 {% else %}
-<h3 class="active-title">Atividade</h3>
+<h3 class="active-title">Activity</h3>
 {% endif %}
 <br>
 
@@ -41,7 +41,7 @@
             <!-- adiciona botao de apagar para dono da mensagem -->
             {% if request.user == message.user %}
                 <a class="btn btn-outline-danger btn-sm" 
-                    href="{% url 'delete-message' message.id %}">Apagar</a>
+                    href="{% url 'delete-message' message.id %}">Delete</a>
             {% endif %}
             </div>
         </div>
@@ -73,10 +73,10 @@
             <!-- botao editar alerta -->
             <div class="card-footer">
             <a class="btn btn-warning btn-sm" 
-                href="{% url 'update-alert' alerta.id %}">Editar</a>
+                href="{% url 'update-alert' alerta.id %}">Edit</a>
             <!-- botao apagar alerta -->
             <a class="btn btn-outline-danger btn-sm" 
-                href="{% url 'delete-alert' alerta.id %}">Apagar</a>
+                href="{% url 'delete-alert' alerta.id %}">Delete</a>
             </div>
         </div>
     </div>
@@ -90,11 +90,11 @@
                         <li class="list-group-item">{{ alerta.mercado }} - {{ alerta.ativo }}</li>
                     </div>
                     <div class="modal-body">
-                        <li class="list-group-item">Compra: R${{ alerta.compra }}</li>
-                        <li class="list-group-item">Venda:  R${{ alerta.venda }}</li>
-                        <li class="list-group-item">Busca:    {{ alerta.periodo }}min(s)</li>
-                        <li class="list-group-item">Duração:  {{ alerta.duracao }}dia(s)</li>
-                        <li class="list-group-item">Alertar:  {{ alerta.email }}</li>
+                        <li class="list-group-item">Buy: R${{ alerta.compra }}</li>
+                        <li class="list-group-item">Sell:  R${{ alerta.venda }}</li>
+                        <li class="list-group-item">Period:    {{ alerta.periodo }}min(s)</li>
+                        <li class="list-group-item">Duration:  {{ alerta.duracao }}dia(s)</li>
+                        <li class="list-group-item">Alert to:  {{ alerta.email }}</li>
                     </div>
                 </ul>
             </div>

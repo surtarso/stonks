@@ -21,17 +21,17 @@ Stonks! - Login
         <form method="POST" action="">
             {% csrf_token %}
 
-            <label>Nome:</label>
+            <label>Name:</label>
             <input type="text" name="username" placeholder="Enter username"/>
 
-            <label>Senha:</label>
+            <label>Password:</label>
             <input type="password" name="password" placeholder="Enter password"/>
 
             <input type="submit" value="Entrar" />
         </form>
         <br>
-        <p>Ainda não é registrado?</p>
-        <a class="btn btn-primary" href="{% url 'register' %}">Registrar</a>
+        <p>Not yet registered?</p>
+        <a class="btn btn-primary" href="{% url 'register' %}">Register</a>
     
 {% else %}
 <!--
@@ -45,8 +45,8 @@ Stonks! - Login
         </form>
 
         <div class="container form-control" style="padding: 20px">
-        <p>Já possui um registro?</p>
-        <a class="btn btn-primary" href="{% url 'login' %}">Entrar</a>
+        <p>Already registered?</p>
+        <a class="btn btn-primary" href="{% url 'login' %}">Log in</a>
         </div>
     </div>
 {% endif %}

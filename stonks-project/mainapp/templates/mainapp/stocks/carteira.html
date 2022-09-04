@@ -16,7 +16,7 @@
 
 {% block title %}
 {% load myfilters %}
-Stonks! - Carteira
+Stonks! - Wallet
 {% endblock title %}
 
 <!--
@@ -25,7 +25,7 @@ Stonks! - Carteira
 {% block body %}
 <div class="container-xxl">
     <br>
-    <h3>Carteira</h3>
+    <h3>Wallet</h3>
 
     <table class="table-responsive">
         <table id="tabela" class="table table-hover">
@@ -212,7 +212,7 @@ Stonks! - Carteira
         </table>
     </table>
     <!-- botao para adicionar um novo ativo na carteira -->
-    <a class="btn btn-primary btn-sm d-grid gap-2" href="{% url 'create-carteira' %}">Adicionar Novo Ativo</a>
+    <a class="btn btn-primary btn-sm d-grid gap-2" href="{% url 'create-carteira' %}">Add new stock</a>
     <br>
     <!--
     Area abaixo da tabela que indica o patrimonio total do usuario.

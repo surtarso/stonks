@@ -14,10 +14,10 @@ Stonks! - DELETE
         {% csrf_token %}
         <!-- cita objeto a ser apagado -->
         <p class="lil-space">
-            Realmente APAGAR "{{ obj }}"?
+            Really DELETE "{{ obj }}"?
         </p>
         <!-- bota para confirmar o delete -->
-        <a class="btn btn-primary" href="{{ request.META.HTTP_REFERER }}">voltar</a>
+        <a class="btn btn-primary" href="{{ request.META.HTTP_REFERER }}">back</a>
         <input class="btn btn-danger" type="submit" value="Confirmar" />
     </form>
 {% endblock body %}

@@ -7,7 +7,7 @@
 {% extends 'mainapp/basic.html' %}
 
 {% block title %}
-Stonks! - Sala
+Stonks! - Room
 {% endblock title %}
 
 
@@ -26,7 +26,7 @@ Stonks! - Sala
         </div>
         <!-- area de comentarios -->
         <div class="comment-wrapper">
-            <big>Comentários</big>
+            <big>Comments</big>
             
             <div class="card">
             {% for message in room_messages %}
@@ -65,7 +65,7 @@ Stonks! - Sala
     <!-- participantes -->
     <div class="container card-participants">
         
-        <h5>Participantes</h5>
+        <h5>Participants</h5>
         <br>
         <div class="card">
             {% for user in participants %}
