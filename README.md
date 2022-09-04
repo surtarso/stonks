@@ -4,5 +4,5 @@ I renamed the app and will take new screenshots. I will also translate it to eng
 <h5>Introduction:</h5>
 <p>This web app consists of five modules to control individual users on forums, custom stock price alerts, personal stock wallet and a live stock price tracker. It is written in Python using the Django framework with Celery and Redis for socket communication, yahoo-fin for price checking and Plotly for graphs.</p>
 <p align="center">
-  <img src="shots/home.png" width="50%" height="50%" >
+  <img src="shots/home.png" width="50%" height="50%" href="stock-project">
 </p>
