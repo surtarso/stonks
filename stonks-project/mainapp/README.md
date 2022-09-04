@@ -4,10 +4,3 @@ O arquivo [tasks.py](tasks.py) contém as background tasks do celery que control
 Em [routing.py](routing.py) o conteúdo foi tirado diretamente da documentação do Celery.
 
 Os [formulários](forms.py) foram feitos em ModelForm fazendo assim o uso de [classes](models.py) e suas propriedades para manipulação da DB.
-
-<h5>Admin Panel:</h5>
-<img src="https://raw.githubusercontent.com/surtarso/Python-Projects/main/Desafio%20Alpha%20-%20StocksWatch/shots/admin_home.png" width='50%' height='50%'>
-
-
-<h5>Alertas na DB:</h5>
-<img src="https://raw.githubusercontent.com/surtarso/Python-Projects/main/Desafio%20Alpha%20-%20StocksWatch/shots/admin_alerta.png" width='50%' height='50%'>
