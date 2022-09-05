@@ -1,17 +1,17 @@
-- Pasta [component]() - Componentes reutilizáveis para os demais outros templates. (includes)
+- [component](component) - reusable components. (includes)
   
-- Pasta [forum]() - Templates relacionados ao Forum, como criar e apagar salas de bate papo, mandar mensagens e visualizar o feed de noticias.
+- [forum](forum) - forum related templates.
   
-- Pasta [stocks]() - Templates relacionados à cotação de ativos financeiros, manipulação de alertas de preço e carteira de balanceamento.
+- [stocks](stocks) - stocks related templates.
    
-- Pasta [users]() - Templates relacionados ao cadastro e login de usuarios e paginas de profile.
+- [users](users) - user related templates.
   
-- Arquivo [basic.html]() - Template base para os outros templates.
+- [basic.html](basic.html) - base root template.
    
-- Arquivo [basic_delete.html]() - Template usado para apagar alertas, salas, mensagens e ativos da carteira.
+- [basic_delete.html](basic_delete.html) - delete data component for any database delete.
   
-- Arquivo [basic_navbar.html]() - NavBar que acompanha todas as paginas do site.
+- [basic_navbar.html](basic_navbar.html) - navbar template.
   
-- Arquivo [home.html]() - Template da landing page. (pagina inicial)
+- [home.html](home.html) - landing page.
 
-- Arquivo [404.html]() - Custom 404.
+- [404.html](404.html) - custom 404.
