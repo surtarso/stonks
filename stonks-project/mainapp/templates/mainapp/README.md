@@ -11,6 +11,8 @@ This documentation provides an overview of the different templates used in the p
 - [home.html](#homehtml)
 - [404.html](#404html)
 
+Back to [`mainapp`](stonks-project/mainapp/README.md)
+
 ## Component
 
 This directory [component](component) contains reusable components that are used across various templates within the project. These components promote consistency and modularity throughout the application's UI.
