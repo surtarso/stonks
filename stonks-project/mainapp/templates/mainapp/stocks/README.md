@@ -3,7 +3,8 @@
 - [Stock Picker](#stock-picker-page-documentation)
 - [Stock Tracker](#stock-tracker-page-documentation)
 - [Stock Graphs](#stock-graph-page-documentation)
-- [Stock Wallet](#wallet-page-documentation)
+- [Portfolio Management](#wallet-page-documentation)
+- [New Asset Creation](#new-asset-creation-page-documentation)
 
 # Stock Picker Page Documentation
 <p><img src="../../../../../shots/picker.png" width="50%" height="50%"></p>
@@ -320,5 +321,55 @@ The page includes a section where graphs and analytics can be displayed, helping
 ## Conclusion
 
 The `carteira.html` page offers users a comprehensive view of their stock portfolio, allowing them to analyze and manage their investments effectively. By providing various metrics, order suggestions, and historical data, this page assists users in making informed decisions about their investment strategies and maintaining a balanced portfolio.
+
+[Back to top](#index-of-stocks)
+
+# New Asset Creation Page Documentation
+
+The [carteira_form.html](carteira_form.html) page is where users can create and add new assets to their portfolio on the "Wallet" page. This page allows users to enter details about the new asset, such as its ticker symbol, quantity, and average price. The entered data will be used to track and analyze the performance of the new asset within their portfolio.
+
+## Contents
+
+1. [Extending Base Template](#extending-base-template)
+2. [Page Title](#page-title)
+3. [Form for New Asset Creation](#form-for-new-asset-creation)
+4. [Submission](#submission)
+5. [Conclusion](#conclusion)
+
+## Extending Base Template
+
+```html
+{% extends 'mainapp/basic.html' %}
+```
+
+The `carteira_form.html` page extends the base template `'mainapp/basic.html'`.
+
+## Page Title
+
+```html
+{% block title %}
+Stonks! - Wallet
+{% endblock title %}
+```
+
+The page title is set to "Stonks! - Wallet", which appears in the browser tab.
+
+## Form for New Asset Creation
+
+The page includes a form (`carteira_form`) for users to enter information about the new asset they want to add to their portfolio. The form includes fields such as:
+
+- Ticker symbol: The unique identifier for the asset.
+- Quantity: The number of units of the asset owned by the user.
+- Average price: The average price at which the user acquired the asset.
+
+Users are required to fill out these fields with accurate information.
+
+## Submission
+
+Upon completing the form, users can click the "Update" button to submit the form and create the new asset within their portfolio. The entered data will be processed and added to the user's portfolio, allowing them to track the performance of the new asset on the "Wallet" page.
+
+## Conclusion
+
+The `carteira_form.html` page provides users with a convenient way to add new assets to their portfolio. By entering accurate information about the asset's details, users can maintain an accurate representation of their investment portfolio and effectively track their investments' performance over time on the "Wallet" page.
 
 [Back to top](#index-of-stocks)
