@@ -7,6 +7,8 @@ This guide provides in-depth explanations for various views within the project.
 - [views_stocks.py - Stock Picker, Tracker, Graph, and Wallet](#stock-picker-tracker-graph-and-wallet)
 - [views_user.py - User Login/Register Pages](#user-loginregister-pages)
 
+Back to [`mainapp`](../../README.md)
+
 ## Price Alerts
 
 The [views_alert.py](views_alert.py) module contains views related to price alerts for stocks. This includes creating, updating, and deleting price alerts for specific stock tickers. The views interact with the `Alerta` model and provide functionalities to set alert thresholds for buying and selling prices. Users can manage their price alerts through these views.
