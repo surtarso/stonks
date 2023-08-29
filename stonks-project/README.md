@@ -1,3 +1,5 @@
+# Stonks Documentation
+
 This section contains the project that is structured to manage various functionalities related to stock tracking, alerts, and more. The project is organized into the [mainapp](mainapp) directory, which holds the main application functionalities, and the [stockproject](stockproject) directory, which contains the project settings and configurations.
 
 ### `mainapp`
