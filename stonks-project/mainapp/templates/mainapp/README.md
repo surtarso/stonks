@@ -41,7 +41,6 @@ The [users](users) directory contains templates related to user authentication a
 
 - `login_register.html`: The template for user login and registration.
 - `profile.html`: The template for displaying user profiles.
-- `change_password.html`: The template for changing user passwords.
 
 ## basic.html
 
