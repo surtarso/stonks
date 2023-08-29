@@ -15,6 +15,8 @@ Stonks!™️ is a web app built using the Django framework, designed to provide
 
 - **Live Stock Price Tracker**: Stay updated with real-time stock price tracking and visualize historical data using interactive graphs.
 
+Follow this link for [documentation](stonks-project/mainapp/README.md).
+
 ## Installation
 
 Follow these steps to set up the Stonks!™️ app on your local machine:
