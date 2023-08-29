@@ -6,6 +6,7 @@
 - [WebSocket Routing Documentation](#websocket-routing-documentation)
 - [Forms Documentation](#forms-documentation)
 - [URLs Documentation](#urls-documentation)
+- [WebSocket Consumer](#websocket-consumer)
 
 # Tasks Documentation
 
@@ -45,6 +46,7 @@ from .tasks import update_stock
 result = update_stock.delay(stockpicker)
 print(result.get())  # Prints the task result ('update_stock() -> Done.')
 ```
+[Back to top](#index)
 
 # WebSocket Routing Documentation
 
@@ -80,6 +82,8 @@ In the provided example, a single URL pattern is defined:
 ## Summary
 
 WebSocket routing in Django allows you to define URL patterns that correspond to WebSocket consumers. This enables real-time communication between clients and the server using WebSockets. The provided `routing.py` file demonstrates how to define a WebSocket URL pattern and associate it with a consumer class.
+
+[Back to top](#index)
 
 # Forms Documentation 
 
@@ -137,6 +141,7 @@ A form for adding/editing an asset in the user's portfolio.
 ### Description:
 The `CarteiraForm` enables users to add or edit assets in their portfolio. It collects information about the asset's ticker, average price, quantity, and weight in the portfolio.
     
+[Back to top](#index)
 
 # URLs Documentation
 
@@ -248,3 +253,61 @@ This document outlines the URL patterns used in the Django project.
 - Path: `/delete-carteira/<str:pk>/`
 - View: `views.deleteCarteira`
 - Name: `delete-carteira`
+
+[Back to top](#index)
+
+# WebSocket Consumer
+
+The [consumer.py](consumer.py) is an AsyncWebsocketConsumer in Django that handles real-time communication for stock-related updates between clients and the server.
+
+## Overview
+
+The `StockConsumer` class is responsible for managing WebSocket connections and handling the exchange of stock-related information. It supports functionalities such as adding stocks to Celery Beat, associating stocks with users, sending stock updates, and managing disconnections.
+
+## Functionalities
+
+### Adding to Celery Beat
+
+The `addToCeleryBeat` method adds selected stocks to the Celery Beat task, ensuring periodic updates for stock quotes.
+
+### Adding to StockDetail
+
+The `addToStockDetail` method associates selected stocks with the current user, adding them to the `StockDetail` model.
+
+### Connection Management
+
+- `connect`: Establishes a WebSocket connection, parses query parameters for selected stocks, and adds them to Celery Beat and `StockDetail`.
+
+- `disconnect`: Manages user disconnections, removes user-associated stocks, and updates Celery Beat accordingly.
+
+### Receiving and Sending Updates
+
+- `receive`: Receives messages from WebSocket clients and sends them to the room group for broadcast.
+
+- `send_stock_update`: Receives stock update messages from the room group, filters messages based on user-associated stocks, and sends updates back to clients.
+
+## Usage
+
+1. Make sure you have the required packages installed. If not, install them using `pip install channels django_celery_beat`.
+
+2. Configure your Django project to use Channels.
+
+3. Integrate the `StockConsumer` class into your application, and adjust it according to your project's needs.
+
+4. Use WebSocket connections to interact with the `StockConsumer` for real-time stock updates.
+
+## Note
+
+- This consumer example uses synchronous database queries (`sync_to_async`) to interact with the database within an asynchronous context. Consider using async database libraries for full asynchronous behavior.
+
+- Ensure that your Celery setup (`CELERY_BROKER_URL`, etc.) is properly configured for Celery Beat tasks.
+
+## Contributing
+
+Feel free to contribute to this example, improve functionalities, or adapt it for your specific use case.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+[Back to top](#index)
