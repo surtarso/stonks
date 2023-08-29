@@ -6,6 +6,13 @@
 - [Portfolio Management](#wallet-page-documentation)
 - [New Asset Creation](#new-asset-creation-page-documentation)
 
+# Introduction
+
+In this documentation, you will find detailed information about the various components of the application, including their functionality, purpose, and usage. Each section will cover a specific aspect of the application, guiding you through the features and how to interact with them effectively.
+These pages collectively form the core functionality of the application, helping users make informed investment decisions, track their portfolio's performance, analyze historical data, and manage their assets effectively.
+
+Feel free to navigate to the relevant sections using the links provided above to learn more about each page's purpose, content, and usage.
+
 # Stock Picker Page Documentation
 <p><img src="../../../../../shots/picker.png" width="50%" height="50%"></p>
 
