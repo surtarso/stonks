@@ -258,7 +258,7 @@ This document outlines the URL patterns used in the Django project.
 
 # WebSocket Consumer
 
-The [consumer.py](consumer.py) is an AsyncWebsocketConsumer in Django that handles real-time communication for stock-related updates between clients and the server.
+The [consumers.py](consumers.py) is an AsyncWebsocketConsumer in Django that handles real-time communication for stock-related updates between clients and the server.
 
 ## Overview
 
