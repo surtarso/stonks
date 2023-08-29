@@ -11,7 +11,7 @@ This documentation provides an overview of the different templates used in the p
 - [home.html](#homehtml)
 - [404.html](#404html)
 
-Back to [`mainapp`](../mainapp/README.md)
+Back to [`mainapp`](../../README.md)
 
 ## Component
 
