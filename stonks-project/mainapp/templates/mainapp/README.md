@@ -24,8 +24,6 @@ The [forum](forum) directory contains templates related to the forum feature of 
 - `forum.html`: The main template for the forum page, where users can access existing chat rooms.
 - `room.html`: The template for displaying a specific chat room.
 - `room_form.html`: The form template for creating and editing chat rooms.
-- `basic_delete.html`: A reusable component for confirming data deletion.
-- `basic_navbar.html`: The navbar template for navigation within the forum section.
 
 ## Stocks
 
