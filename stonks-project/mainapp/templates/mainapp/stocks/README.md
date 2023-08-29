@@ -12,7 +12,7 @@ The [stockpicker.html](stockpicker.html) page provides users with the ability to
 ## Contents
 
 1. [Extending Base Template](#extending-base-template)
-2. [Page Title](#page-title)
+2. [Page Title](#page-title-picker)
 3. [Stock Picker Form](#stock-picker-form)
 4. [Stock Selection](#stock-selection)
 5. [Search Button](#search-button)
@@ -25,7 +25,7 @@ The [stockpicker.html](stockpicker.html) page provides users with the ability to
 
 The `stockpicker.html` page extends the base template `'mainapp/basic.html'`, ensuring consistent styling and layout throughout the application.
 
-## Page Title
+## Page Title `picker`
 
 ```html
 {% block title %}
@@ -79,7 +79,7 @@ The [stocktracker.html](stocktracker.html) page displays selected stocks along w
 ## Contents
 
 1. [Extending Base Template and Loading Static Files](#extending-base-template-and-loading-static-files)
-2. [Page Title](#page-title)
+2. [Page Title](#page-title-tracker)
 3. [Table Head](#table-head)
 4. [Table Body](#table-body)
 5. [Change Calculation and Styling](#change-calculation-and-styling)
@@ -97,7 +97,7 @@ The [stocktracker.html](stocktracker.html) page displays selected stocks along w
 
 The `stocktracker.html` page extends the base template `'mainapp/basic.html'` and loads necessary static files for styling and scripting.
 
-## Page Title
+## Page Title `Tracker`
 
 ```html
 {% block title %}
