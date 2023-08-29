@@ -82,7 +82,9 @@ In the provided example, a single URL pattern is defined:
 WebSocket routing in Django allows you to define URL patterns that correspond to WebSocket consumers. This enables real-time communication between clients and the server using WebSockets. The provided `routing.py` file demonstrates how to define a WebSocket URL pattern and associate it with a consumer class.
 
 # Forms Documentation 
-[forms.py](forms.py)
+
+This section explains the forms defined in the Django [forms.py](forms.py) file and their functionalities.
+
 ## Register Form: `SignUpForm`
 
 A form for creating a new user account.
@@ -137,7 +139,9 @@ The `CarteiraForm` enables users to add or edit assets in their portfolio. It co
     
 
 # URLs Documentation
-[urls.py](urls.py)
+
+This section explains the urls defined in the Django [urls.py](urls.py) file and their paths.
+
 ## URL Configuration
 
 This document outlines the URL patterns used in the Django project.
