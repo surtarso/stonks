@@ -1,44 +1,45 @@
 # Index of `component`
 
+- [About](#about-components)
 - [Activity Component](#activity-component-documentation)
 - [Alerts Component](#alerts-component-documentation)
 - [Feed Component](#feed-component-documentation)
 - [Mercado Component](#mercado-component-documentation)
 - [Topics Component](#topics-component-documentation)
 
-# About Components Documentation
+# About Components
 
 This documentation provides detailed insights into various Django components that enhance user interaction and functionality within a web application. Each component serves a specific purpose, contributing to a seamless user experience and effective information management. Let's summarize the key components discussed:
 
-## Activity Component (`activity_component.html`)
+## Activity Component [activity_component.html](activity_component.html)
 
 The **Activity Component** is employed to showcase recent activities, such as alerts, messages, and forum posts, depending on the context. It includes:
 
 - Displaying recent messages and user alerts.
 - Providing options for users to view profiles, delete messages, and manage alerts.
 
-## Alerts Component (`alerts_component.html`)
+## Alerts Component [alerts_component.html](alerts_component.html)
 
 The **Alerts Component** focuses on presenting user alerts and enabling interactions with them. It offers:
 
 - Displaying owned alerts.
 - Buttons to edit and delete alerts, with dynamic modals for detailed alert information.
 
-## Feed Component (`feed_component.html`)
+## Feed Component [feed_component.html](feed_component.html)
 
 The **Feed Component** centralizes room listing and creation functionalities. It facilitates:
 
 - Displaying rooms, with room count and new room creation options.
 - Allowing users to view profiles, edit, and delete rooms based on ownership.
 
-## Mercado Component (`mercado_component.html`)
+## Mercado Component [mercado_component.html](mercado_component.html)
 
 The **Mercado Component** specializes in listing and filtering alerts based on markets. It includes:
 
 - Displaying available markets.
 - Links to filter alerts by selected markets.
 
-## Topics Component (`topics_component.html`)
+## Topics Component [topics_component.html](topics_component.html)
 
 The **Topics Component** streamlines filtering messages by topics and alerts by markets. It offers:
 
