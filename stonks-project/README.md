@@ -22,4 +22,5 @@ The [stockproject](stockproject) directory contains project-level settings and c
 - `settings.py`: Project-wide settings such as installed apps, database configuration, and more.
 - `urls.py`: Project-level URL routing and URL configuration.
 - `asgi.py`: Enables support for asynchronous web servers and real-time applications.
+- `wsgy.py`: Enables deployment on traditional web servers.
 - `celery.py`: Sets up the Celery distributed task queue to handle asynchronous processing and background tasks.
