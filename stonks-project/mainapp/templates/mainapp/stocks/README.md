@@ -192,12 +192,12 @@ The `stocktracker.html` page offers users a comprehensive view of their selected
 
 # Stock Graph Page Documentation
 
-The `graph.html` page is where users can view historical price data for a specific stock in the form of a candlestick chart. This page provides an interactive visualization of the stock's price movement over time.
+The [graph.html](graph.html) page is where users can view historical price data for a specific stock in the form of a candlestick chart. This page provides an interactive visualization of the stock's price movement over time.
 
 ## Contents
 
 1. [Extending Base Template and Loading Static Files](#extending-base-template-and-loading-static-files)
-2. [Page Title](#page-title)
+2. [Page Title](#page-title-graph)
 3. [Graph Display](#graph-display)
 4. [Error Handling](#error-handling)
 
@@ -210,7 +210,7 @@ The `graph.html` page is where users can view historical price data for a specif
 
 The `graph.html` page extends the base template `'mainapp/basic.html'` and loads necessary static files for styling and scripting.
 
-## Page Title
+## Page Title `Graph`
 
 ```html
 {% block title %}
