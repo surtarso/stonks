@@ -7,7 +7,7 @@ This guide provides in-depth explanations for various views within the project.
 - [views_stocks.py - Stock Picker, Tracker, Graph, and Wallet](#stock-picker-tracker-graph-and-wallet)
 - [views_user.py - User Login/Register Pages](#user-loginregister-pages)
 
-Back to [`mainapp`](../../README.md)
+Back to [`mainapp`](../README.md)
 
 ## Price Alerts
 
