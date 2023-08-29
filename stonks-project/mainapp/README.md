@@ -48,7 +48,7 @@ from .tasks import update_stock
 result = update_stock.delay(stockpicker)
 print(result.get())  # Prints the task result ('update_stock() -> Done.')
 ```
-[Back to top](#index)
+[Back to top](#index-of-mainapp)
 
 # WebSocket Routing Documentation
 
