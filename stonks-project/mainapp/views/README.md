@@ -1,4 +1,4 @@
-# Index
+# Index of `views`
 This guide provides in-depth explanations for various views within the project.
 
 - [views_alert.py - Price Alerts](#price-alerts)
@@ -11,7 +11,7 @@ This guide provides in-depth explanations for various views within the project.
 
 The [views_alert.py](views_alert.py) module contains views related to price alerts for stocks. This includes creating, updating, and deleting price alerts for specific stock tickers. The views interact with the `Alerta` model and provide functionalities to set alert thresholds for buying and selling prices. Users can manage their price alerts through these views.
 
-[Back to top](#index)
+[Back to top](#index-of-views)
 
 ## Forum Message Board
 
@@ -76,7 +76,7 @@ View for deleting messages within chat rooms.
 These views are part of the forum feature. They handle various aspects of the forum, including viewing chat rooms, entering specific rooms, creating rooms, updating and deleting rooms, as well as deleting messages within rooms. The views use authentication to ensure that users are logged in before accessing these functionalities. They interact with the `Room`, `Message`, and `Topic` models, along with associated forms. Additionally, error handling is incorporated using `ObjectDoesNotExist` exceptions and proper HTTP response codes.
 
 
-[Back to top](#index)
+[Back to top](#index-of-views)
 
 ## Home/Landing Page
 
@@ -119,7 +119,7 @@ def http_404_error(request, exception)
 
 The `http_404_error` view renders the '404.html' template with an HTTP status code of 404. This template is displayed when a user tries to access a page that does not exist within the application.
 
-[Back to top](#index)
+[Back to top](#index-of-views)
 
 ## Stock Picker, Tracker, Graph, and Wallet
 
@@ -163,7 +163,7 @@ These views collectively enable users to monitor and manage their stock-related 
 ### deleteCarteira View
 - Deletes an asset from the user's balancing portfolio.
 
-[Back to top](#index)
+[Back to top](#index-of-views)
 
 ## User Login/Register Pages
 
@@ -208,7 +208,7 @@ The `userProfile` view displays a user's profile page containing items created b
 - Retrieves user-specific data such as rooms, messages, topics, alerts, and markets
 - Handles non-existing user profiles with a 404 page
 
-[Back to top](#index)
+[Back to top](#index-of-views)
 
 ## Conclusion
 
