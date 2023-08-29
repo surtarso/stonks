@@ -2,7 +2,8 @@
 
 - [Stock Picker](#stock-picker-page-documentation)
 - [Stock Tracker](#stock-tracker-page-documentation)
-- [Stock Graphs](#stock-graphs-page-documentation)
+- [Stock Graphs](#stock-graph-page-documentation)
+- [Stock Wallet](#wallet-page-documentation)
 
 # Stock Picker Page Documentation
 <p><img src="../../../../../shots/picker.png" width="50%" height="50%"></p>
@@ -252,5 +253,72 @@ The `graph.html` page provides users with an interactive candlestick chart to vi
 
 [Back to top](#index-of-stocks)
 
-- wallet
+# Wallet Page Documentation
 <p><img src="../../../../../shots/wallet.png" width="50%" height="50%"></p>
+
+The [carteira.html](carteira.html) page is where users can manage their portfolio of stocks and track their performance over time. Users can add stocks to their portfolio, assign weights or notes to each stock, and view various metrics that help them balance their portfolio effectively.
+
+## Contents
+
+1. [Extending Base Template and Loading Static Files](#extending-base-template-and-loading-static-files)
+2. [Page Title](#page-title-wallet)
+3. [Table Layout](#table-layout)
+4. [Data Filling and Balance Calculation](#data-filling-and-balance-calculation)
+5. [Total Portfolio Value](#total-portfolio-value)
+6. [Graphs and Analytics](#graphs-and-analytics)
+7. [Conclusion](#conclusion)
+
+## Extending Base Template and Loading Static Files
+
+```html
+{% extends 'mainapp/basic.html' %}
+{% load static %}
+```
+
+The `carteira.html` page extends the base template `'mainapp/basic.html'` and loads necessary static files for styling and scripting.
+
+## Page Title `Wallet`
+
+```html
+{% block title %}
+Stonks! - Wallet
+{% endblock title %}
+```
+
+The page title is set to "Stonks! - Wallet", which appears in the browser tab.
+
+## Table Layout
+
+The page features a table that displays various metrics related to the user's stock portfolio. The table includes columns for attributes such as weight, stock ticker, price, average price, quantity, total value, desired percentage, actual percentage, desired value, missing value, order suggestion, volume for buying/selling, price change, 52-week range, return, actions, and historical data.
+
+## Data Filling and Balance Calculation
+
+The table is populated with data from the user's portfolio (`data`). Expressions within the table calculate and display various metrics, including:
+
+- Weight (nota/peso)
+- Total value (quantity * market price)
+- Desired percentage (nota/sum(notas)%)
+- Actual percentage (total/totais%)
+- Desired value (patrimonio * quero%)
+- Missing value (quero_din - total)
+- Order suggestion (buy or wait based on quero and tenho percentages)
+- Volume for buying/selling (falta / price)
+- Price change during the day
+- 52-week price range
+- Return (percentage change based on average price)
+- Action buttons for editing and deleting stocks
+- Graph button for viewing historical data
+
+## Total Portfolio Value
+
+A collapsible accordion element displays the total value of the user's portfolio. This value is used to calculate various expressions related to portfolio balance.
+
+## Graphs and Analytics
+
+The page includes a section where graphs and analytics can be displayed, helping users visualize the performance of their portfolio over time.
+
+## Conclusion
+
+The `carteira.html` page offers users a comprehensive view of their stock portfolio, allowing them to analyze and manage their investments effectively. By providing various metrics, order suggestions, and historical data, this page assists users in making informed decisions about their investment strategies and maintaining a balanced portfolio.
+
+[Back to top](#index-of-stocks)
