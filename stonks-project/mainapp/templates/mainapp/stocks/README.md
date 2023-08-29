@@ -2,6 +2,7 @@
 
 - [Stock Picker](#stock-picker-page-documentation)
 - [Stock Tracker](#stock-tracker-page-documentation)
+- [Stock Graphs](#stock-graphs-page-documentation)
 
 # Stock Picker Page Documentation
 <p><img src="../../../../../shots/picker.png" width="50%" height="50%"></p>
@@ -186,6 +187,68 @@ jQuery and Datatables scripts enhance the functionality of the stock table, incl
 
 The `stocktracker.html` page offers users a comprehensive view of their selected stocks' real-time market data. With organized tables, dynamic change calculations, historical graph options, and real-time updates, users can effectively monitor and analyze their chosen stocks' performance, supporting informed investment decisions.
 
+
+[Back to top](#index-of-stocks)
+
+# Stock Graph Page Documentation
+
+The `graph.html` page is where users can view historical price data for a specific stock in the form of a candlestick chart. This page provides an interactive visualization of the stock's price movement over time.
+
+## Contents
+
+1. [Extending Base Template and Loading Static Files](#extending-base-template-and-loading-static-files)
+2. [Page Title](#page-title)
+3. [Graph Display](#graph-display)
+4. [Error Handling](#error-handling)
+
+## Extending Base Template and Loading Static Files
+
+```html
+{% extends 'mainapp/basic.html' %}
+{% load static %}
+```
+
+The `graph.html` page extends the base template `'mainapp/basic.html'` and loads necessary static files for styling and scripting.
+
+## Page Title
+
+```html
+{% block title %}
+Stonks! - Graph
+{% endblock title %}
+```
+
+The page title is set to "Stonks! - Graph", which appears in the browser tab.
+
+## Graph Display
+
+```html
+<div class="container graph-container">
+    <center><h2>{{ ticker }}</h2><center>
+        
+    {% if graph %}
+        <div class="thegraph">
+        {{ graph|safe }}
+        </div>
+    {% else %}
+
+        <br><br>
+        <p>An error has occurred.</p>
+
+    {% endif %}
+
+</div>
+```
+
+The graph container displays the title of the stock (`ticker`) and renders the candlestick chart using the `graph` variable. The graph is safely rendered using the `safe` filter to prevent any unintended HTML escaping.
+
+## Error Handling
+
+If there is an issue with rendering the graph data, an error message is displayed to the user.
+
+## Conclusion
+
+The `graph.html` page provides users with an interactive candlestick chart to visualize the historical price movement of a selected stock. Users can gain insights into price trends and patterns, helping them make more informed investment decisions based on the stock's historical performance.
 
 [Back to top](#index-of-stocks)
 
