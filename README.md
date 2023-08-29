@@ -2,6 +2,9 @@
 
 Stonks!™️ is a web app built using the Django framework, designed to provide users with various tools for managing and tracking stocks. The app includes modules for user forums, custom stock price alerts, personal stock wallet, and a live stock price tracker. It's written in Python and utilizes technologies like Django, Celery, Redis, yahoo-fin, and Plotly to deliver a comprehensive stock management experience.
 
+![Image 1](shots/home.png) | ![Image 2](shots/wallet.png)
+:-------------------------:|:-------------------------:
+
 ## Features
 
 - **User Forums**: Engage in discussions about stocks, investment strategies, and market trends with other users on the platform.
