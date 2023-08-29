@@ -1,4 +1,4 @@
-# Index
+# Index of `mainapp`
 
 - [Templates Folder](templates/mainapp)
 - [Views Folder](views)
@@ -7,6 +7,8 @@
 - [Forms Documentation](#forms-documentation)
 - [URLs Documentation](#urls-documentation)
 - [WebSocket Consumer](#websocket-consumer)
+
+Jump to [`stockproject`](../stockproject/)
 
 # Tasks Documentation
 
